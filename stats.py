@@ -1,3 +1,10 @@
+def get_book_text():
+    with open("books/frankenstein.txt") as file:
+        file_content = file.read()
+        c = file_content.split()
+        print (file_content)
+
+
 def get_num_words():
     with open("books/frankenstein.txt") as file:
         file_content = file.read()
@@ -15,8 +22,6 @@ def count_characters():
             else:
                 dic[words] = 1
 
-        print (dic)
-
-
-
-
+def sort_on(items):
+   items = []
+   print (items.sort(reverse = True, key=sort_on))
